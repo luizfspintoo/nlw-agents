@@ -51,7 +51,7 @@ Aplicativo web que permite aos usuários receber dicas personalizadas sobre seu 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/luizfspintoo/nwl-agents.git
+git clone https://github.com/luizfspintoo/nlw-agents.git
 ```
 
 ### 🧠 Como funciona a IA?
