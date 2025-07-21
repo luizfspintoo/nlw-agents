@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  /* keyword */
+  background-position: top center;
+  background-size: 100% auto;
+  /* width height */
+  background-color: #121214;
+  color: white;
+}
+
+body {
+  font-family: "inter";
+  line-height: 160%;
+}
+
+header {
+  padding-top: 32px;
+  text-align: center;
+}
+
+header img {
+  width: 15rem;
+}
+
+main {
+  max-width: 36rem;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #edd45c);
+  border-radius: 0.4rem;
+  padding-top: 4px;
+}
+
+section>div {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 0.4rem;
+  background-color: #2a2624;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+}
+
+#iaResponse {
+  margin-top: 2rem;
+  background-color: #02010138;
+  padding: 0.675rem;
+  border-radius: 4px;
+  border-left: 4px solid #43e7ad;
+}
+
+#iaResponse ul {
+  padding-left: 1.4rem;
+}
+
+#iaResponse ul li {
+  margin: 0.5rem 0;
+}
+
+#iaResponse p {
+  color: white;
+}
+
+/*Animações*/
+main section {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation-name: appear;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 1rem;
+}
+
+input, select {
+  all: unset;
+  border: 2px solid #5b5bca;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #12121470;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  border: 0;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #edd45c);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.17px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 1rem rgba(182, 199, 88, 0.2);
+}
+
+button:disabled {
+  transition: none;
+  transform: translate(0);
+  box-shadow: initial;
+  cursor: not-allowed;
+  color: black;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
