@@ -6,7 +6,7 @@ Aplicativo web que permite aos usuários receber dicas personalizadas sobre seu 
 
 ## 🤖  Demonstração
 
-![Demonstração do Projeto](./.github/nwl-agents.gif)
+![Demonstração do Projeto](./.github/nlw-agents.gif)
 
 ---
 
